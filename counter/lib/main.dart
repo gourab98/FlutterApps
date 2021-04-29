@@ -122,7 +122,9 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Container(
                 margin: EdgeInsets.symmetric(vertical: 5, horizontal: 20),
                 child: RaisedButton(
-                  onPressed: () => _updateCounter(false),
+                  onPressed: () {
+                    _updateCounter(false);
+                  },
                   child: Text(
                     '-',
                     style: TextStyle(fontSize: 100),
