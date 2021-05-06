@@ -5,7 +5,7 @@ void main(){
 
 class Deck{  
   
-  List <Card> cards;
+  List <Card> cards= [];
   
   Deck(){
       var ranks= ['Ace','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Jack','Queen','King'];
