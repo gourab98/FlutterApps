@@ -45,9 +45,10 @@ class Deck
 */
   removeACard(String rank, String suit){
     
-    return cards.removeWhere((card){
-      return card.rank == rank && card.suit == suit;
-    });
+//    return cards.removeWhere((card){
+//      return card.rank == rank && card.suit == suit;
+//    });
+     return cards.removeWhere((card) => (card.rank == rank) && (card.suit == suit));
   }
   
 }
