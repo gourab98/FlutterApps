@@ -31,9 +31,10 @@ class Deck
   }
   
   cardsWithSuit(String suit){
-    return cards.where((card){
-      return card.suit == suit; 
-    }); 
+//    return cards.where((card){
+//    return card.suit == suit; 
+//    });
+  return cards.where((card) => card.suit == suit);   
   }
   
 }
