@@ -1,0 +1,16 @@
+Flutter resource library:
+https://api.flutter.dev/index.html
+
+Google Supported Icons:
+https://fonts.google.com/icons
+
+Dart Documentation:
+https://dart.dev/guides
+
+Online Dartpad:
+https://dartpad.dartlang.org/
+
+Fake jeson API for testing and Prototyping
+https://jsonplaceholder.typicode.com/
+
+
