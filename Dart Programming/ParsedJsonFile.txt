@@ -6,13 +6,16 @@ void main(){
   
   var parsedJson = json.decode(rawJson);
 
-  print(parsedJson['url']);
-  print(parsedJson['id']);
-  print(parsedJson);
-  var imageModel = new ImageModel(parsedJson['id'], parsedJson['url']);
-  print(imageModel.url);
+//  print(parsedJson['url']);
+//  print(parsedJson['id']);
+//  print(parsedJson);
+//  var imageModel = new ImageModel(parsedJson['id'], parsedJson['url']);
+//  print(imageModel.url);
   
   
+  var imagesModel = new ImageModel.fromJson(parsedJson);
+  
+  print(imagesModel.url);
 }
 
 class ImageModel{
@@ -21,4 +24,10 @@ class ImageModel{
   String url;
   
   ImageModel(this.id, this.url);
+ 
+  ImageModel.fromJson(parsedJson){
+   id  = parsedJson['id'];
+   url = parsedJson['url'];
+  }
+  
 }
